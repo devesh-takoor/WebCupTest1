@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Eczar:wght@500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background: #8F8F8F;
+    width: 250px;
+    height: 390px;
+    margin: 10px;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+}
+
+.card_img{
+    height: 230px;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+.image-1{
+    background-image: url("img/back-img1.jpg");
+}
+
+.image-2{
+    background-image: url("img/back-img2.jpg");
+}
+
+.image-3{
+    background-image: url("img/back-img3.jpg");
+}
+
+.image-4{
+    background-image: url("img/back-img4.jpg");
+}
+
+.card h3{
+    padding: 10px;
+    font-family: "Poppins";
+}
+
+.card hr{
+    width: 95%;
+    background-color: #4acdc6;
+    color:#4acdc6 ;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: outset;
+    border-width: 2px;
+}
+
+.card h4{ 
+    padding: 5px;
+    color: rgb(83, 83, 209);
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+h5 ,h3{
+    color: whitesmoke;
+    font-family: "Poppins";
+}
+
+.contain-likes{
+    width: 100%;
+}
+
+.contain-likes .left{
+    width: 50%;
+    float: left;
+}
+
+.contain-likes .left h5{
+    padding: 10px;
+
+}
+
+.contain-likes .right{
+    margin-left: 50%;
+    position: relative;
+    right: -40px;
+
+}
+
+.contain-likes .right #icon{
+    width: 25%;
+    float: left;
+    padding: 10px;
+}
+
+.contain-likes .right #text h5{
+    display: inline;
+    width: 25%;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+}
+
+.button_container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.button_container a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    Letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.button_container a:hover{ 
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.button_container a span{
+    position: absolute;
+    display: block;    
+}
+
+.button_container a span:nth-child(1){
+    top: 0;
+    Left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#2196f3); 
+}
+
+.button_container a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+.button_container a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#2196f3); 
+}
+
+.button_container a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.button_container a span:nth-child(2){
+    top: -100;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3); 
+}
+
+.button_container a:hover span:nth-child(2){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button_container a span:nth-child(4){
+    bottom: -100;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3); 
+}
+
+.button_container a:hover span:nth-child(4){
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
